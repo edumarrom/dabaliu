@@ -1,89 +1,104 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    margin-top: auto;
 }
 
 /***********
- * Footer
- **********/
-footer {
-    display: flex;
-    justify-content: center;
-    color: #fefefe;
-    background: #c8c8c8;
-    height: 10vh;
-    position:absolute;
-    bottom: 0;
-    width: 100%
+ * Index
+***********/
+
+.cabecera-index {
+    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.9)), url('img/hojas.jpg');
 }
 
-/* footer > ul > li > a:link, a:visited a:hover a:active{
-    text-decoration: none;
-    color:#fefefe;
-} */
-
-footer > ul > li{
-    list-style-type: none;
-    display: inline;
-}
-
-/**********
- * Identificadores
- **********/
-
- #cabecera {
-    /* Ocupar ancho completo, siempre arriba, pegado.*/
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.9)),
-                url('img/hojas.jpg');
-}
-
-#logoCabecera {
-    float: left;
-    align-items: baseline;
-    /* Ocupar ancho completo, siempre arriba, pegado.*/
-    width: 100%
-}
-
-#login {
+.login-index {
     float: right;
-    /* background: #015c5c; - Solo colorea el contorno del boton */
 }
 
-#logo {
+.logo-index {
     position: relative;
     display: flex;
     align-items: baseline;
     justify-content: center;
-    /* background: #FEFEFE; */
+    /* background: #fefefe; */
+    flex-wrap: wrap;
     clear: both;
 }
 
-#landing {
+.landing {
+    font-family: 'Montserrat';
     font-weight:bolder;
     font-size: 120px;
+    line-height: 50px;
+    margin-bottom: 40px;
 }
 
-#tour {
-    font-family: Roboto;
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    /* background: #FEFEFE; */
-    clear: both;
-}
-
-#invitacion {
+.bienvenida {
     font-family: Roboto;
     position: relative;
     text-align: center;
     justify-content: center;
 }
 
-#logo{
-    flex-wrap: wrap;
+.invitacion-bienvenida {
+    font-family: Roboto;
+    position: relative;
     display: flex;
     align-items: baseline;
+    justify-content: center;
+    /* background: #fefefe; */
+    clear: both;
+}
+
+/***********
+ * Footer
+ **********/
+footer.inicio {
+    display: flex;
+    justify-content: center;
+}
+
+ul.menu-footer {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.menu-footer li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.menu-footer li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\00a0";
+}
+
+ul.menu-footer li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.menu-footer li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/**************
+ * privacidad
+**************/
+
+.cabecera-default {
+    float: left;
+    align-items: baseline;
+    width: 100%
 }
 
 /***********
@@ -116,13 +131,6 @@ ul.breadcrumb li a:hover {
 }
 
 /* Cosas que robo de internet */
-h1 {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 50px;
-    margin-bottom: 40px;
-}
-
 .contenedor-texto {
     min-height: 360px;
     border: 0;

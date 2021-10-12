@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Dabaliu</title>
-    <link href="style.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+<!--   <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Dabaliu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="cabecera">
-        <div id="login">
-            <button>Inicia sesión</button>
-        </div>
-
-        <div id="logo">
-            <img src="img/libro.png" width=280 alt="Dabaliu"/>
-            <h1 id="landing">Dabaliu</h1>
-        </div>
-    </header>
-
-    <div id="invitacion">
-            <h3>Queremos ayudarte a describir tu pasión por la lectura.</h3>
-            <p>¿Te animas? Escribe tu nombre y comienza el tour.</p>
+  <header class="cabecera-index">
+  <div class="login-index">
+    <button>Inicia sesión</button>
     </div>
-
-    <div id="tour">
-        <input type="text" id="tname" name="tname" value="Escribe tu nombre..."><br><br>
-        <input type="submit" value="Comenzar">
+    <div class="logo-index">
+        <img src="img/libro.png" width="280" height="280" alt="Dabaliu"/>
+        <h1 class="landing">Dabaliu</h1>
     </div>
-
-
-    <footer class="navLink">
-        <ul>
-        <li><a href="sobre_nosotros.html">Sobre el proyecto | </a></li>
-        <li><a href="participa.html">Participa | </a></li>
-        <li><a href="privacidad.html">Privacidad | </a></li>
-        <li><a href="legal.html">Aviso legal</a></li>
-        </ul>
-    </footer>
+  </header>
+  <main >
+    <div class="bienvenida">
+      <h2>Queremos ayudarte a describir tu pasión por la lectura.</h2>
+      <h3>¿Te animas? Escribe tu nombre y comienza el tour.</h3>
+    </div>
+    <div class="invitacion-bienvenida">
+      <input type="text" id="tname" name="tname" value="Escribe tu nombre..."><br><br>
+      <input type="submit" value="Comenzar">
+    </div>
+  </main>
+  <footer class="inicio">
+    <ul class="menu-footer">
+    <li><a href="">Sobre el proyecto</a></li>
+    <li><a href="">Participa</a></li>
+    <li><a href="">Privacidad</a></li>
+    <li><a href="">Aviso legal</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
